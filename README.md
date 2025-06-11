@@ -69,7 +69,8 @@ Crowdfunding is a way of raising money where many people contribute small amount
 - Created calculated columns and custom KPIs.
 - Designed interactive visuals and dashboards.
 
-*Insert Power BI dashboard screenshot here*
+##  Power Bi Dashboard Image:
+*Insert
 
 ---
 
