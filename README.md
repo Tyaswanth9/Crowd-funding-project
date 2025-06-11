@@ -56,7 +56,9 @@ Crowdfunding is a way of raising money where many people contribute small amount
 - Applied formulas like `SUM`, `COUNT`, `AVERAGE`, `SUMIF`, and `IF`.
 - Built KPIs and charts for analysis.
 
-*Insert Excel dashboard screenshot here*
+## Excel Dashboard Image:
+
+https://github.com/Tyaswanth9/Crowd-funding-project/blob/myself/dashboardE.png
 
 ---
 
