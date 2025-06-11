@@ -58,7 +58,7 @@ Crowdfunding is a way of raising money where many people contribute small amount
 
 ## Excel Dashboard Image:
 
-https://github.com/Tyaswanth9/Crowd-funding-project/blob/myself/dashboardE.png
+{https://github.com/Tyaswanth9/Crowd-funding-project/blob/myself/dashboardE.png}
 
 ---
 
