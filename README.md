@@ -124,11 +124,4 @@ This project helped me understand end-to-end data handling and dashboard creatio
 
 ---
 
-##  Screenshots & Files
-
-- 📁 Excel Dashboard – *[add image or link]*
-- 📁 Power BI Dashboard – *[add image or link]*
-- 📁 Tableau Dashboard – *[add image or link]*
-- 📁 Data Model – *[add image or link]*
-
-# Note: This code is provided for  reference only ** not for use , modification , distributions, or reproduction**.
+# Note: This code is provided for reference only - do not for use , copy , modify , or distributions, or reproduction.
