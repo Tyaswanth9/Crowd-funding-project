@@ -58,7 +58,7 @@ Crowdfunding is a way of raising money where many people contribute small amount
 
 ## Excel Dashboard Image:
 
-![data modelling](https://github.com/Tyaswanth9/Crowd-funding-project/blob/myself/modelingp.png)
+![Excel dashboard](https://github.com/Tyaswanth9/Crowd-funding-project/blob/myself/dashboardE.png)
 
 ---
 
@@ -73,7 +73,7 @@ Crowdfunding is a way of raising money where many people contribute small amount
 
 ##  Power Bi Dashboard Image:
 
-![data modelling](https://github.com/Tyaswanth9/Crowd-funding-project/blob/myself/modelingp.png)
+![powerbi dashboard](https://github.com/Tyaswanth9/Crowd-funding-project/blob/myself/dashboardp.png)
 
 ---
 
@@ -88,7 +88,7 @@ Crowdfunding is a way of raising money where many people contribute small amount
 
 ## Tableau dashboard Image:
 
-![data modelling](https://github.com/Tyaswanth9/Crowd-funding-project/blob/myself/modelingp.png)
+![tableau dashboard](https://github.com/Tyaswanth9/Crowd-funding-project/blob/myself/dashboardT.png)
 ---
 
 ##  SQL Analysis (MySQL)
