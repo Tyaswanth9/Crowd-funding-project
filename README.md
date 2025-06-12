@@ -112,7 +112,7 @@ Crowdfunding is a way of raising money where many people contribute small amount
 FROM projects
 ORDER BY projectid ASC;
 
-![powerbi dashboard](https://github.com/Tyaswanth9/Crowd-funding-project/blob/myself/dashboardp.png)
+![Screen shot](https://github.com/Tyaswanth9/Crowd-funding-project/blob/myself/Screenshot%20(1090).png)
 
 **Use epoch date to create calender table**
 - SELECT DISTINCT
@@ -129,32 +129,32 @@ ORDER BY projectid ASC;
 FROM projects
 ORDER BY dates ASC;
 
-![powerbi dashboard](https://github.com/Tyaswanth9/Crowd-funding-project/blob/myself/dashboardp.png)
+![Screen shot](https://github.com/Tyaswanth9/Crowd-funding-project/blob/myself/Screenshot%20(1091).png)
 
 **Total number of projects**
 - SELECT COUNT(projectid) AS total_projects FROM projects;
 
-![powerbi dashboard](https://github.com/Tyaswanth9/Crowd-funding-project/blob/myself/dashboardp.png)
+![Screen shot](https://github.com/Tyaswanth9/Crowd-funding-project/blob/myself/Screenshot%20(1093).png)
 
 **By location**
 - SELECT COUNT(location_id) AS total_by_location FROM projects;
 
-![powerbi dashboard](https://github.com/Tyaswanth9/Crowd-funding-project/blob/myself/dashboardp.png)
+![Screen shot](https://github.com/Tyaswanth9/Crowd-funding-project/blob/myself/Screenshot%20(1094).png)
 
 **By category**
 - SELECT COUNT(DISTINCT category_id) AS total_by_category FROM projects;
 
-![powerbi dashboard](https://github.com/Tyaswanth9/Crowd-funding-project/blob/myself/dashboardp.png)
+![Screen shot](https://github.com/Tyaswanth9/Crowd-funding-project/blob/myself/Screenshot%20(1095).png)
 
 **Projects per year**
 - SELECT YEAR(FROM_UNIXTIME(created_at)) AS year, COUNT(*) AS total FROM projects GROUP BY year;
 
-![powerbi dashboard](https://github.com/Tyaswanth9/Crowd-funding-project/blob/myself/dashboardp.png)
+![Screen shot](https://github.com/Tyaswanth9/Crowd-funding-project/blob/myself/Screenshot%20(1096).png)
 
 **Projects per month**
 - SELECT MONTH(FROM_UNIXTIME(created_at)) AS month, COUNT(*) AS total FROM projects GROUP BY month;
 
-![powerbi dashboard](https://github.com/Tyaswanth9/Crowd-funding-project/blob/myself/dashboardp.png)
+![Screen shot](https://github.com/Tyaswanth9/Crowd-funding-project/blob/myself/Screenshot%20(1097).png)
 
 
 ---
