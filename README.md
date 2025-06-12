@@ -35,7 +35,7 @@ Crowdfunding is a way of raising money where many people contribute small amount
 
 ##  Data Modeling
 
-*Insert your data model image here*
+![data modelling]()
 
 ---
 
@@ -130,4 +130,4 @@ This project helped me understand end-to-end data handling and dashboard creatio
 - 📁 Tableau Dashboard – *[add image or link]*
 - 📁 Data Model – *[add image or link]*
 
-## Note: This code is provided for  reference only ** not for use , modification , distributions, or reproduction**.
+# Note: This code is provided for  reference only ** not for use , modification , distributions, or reproduction**.
