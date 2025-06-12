@@ -99,6 +99,64 @@ Crowdfunding is a way of raising money where many people contribute small amount
 - `COUNT()`, `DISTINCT`, `SUM()`, `ROUND()`, `AVG()`, `DATEDIFF()`
 - `GROUP BY`, `ORDER BY`, `WHERE`, subqueries
 
+**Epoch time and date change into human readable time and date**
+- SELECT 
+  projectid, state, name, country, creator_id, location_id, category_id,
+  DATE(FROM_UNIXTIME(created_at)) AS created_at_converted,
+  DATE(FROM_UNIXTIME(deadline)) AS deadline_converted,
+  DATE(FROM_UNIXTIME(updated_at)) AS updated_at_converted,
+  DATE(FROM_UNIXTIME(state_changed_at)) AS state_changed_at_converted,
+  DATE(FROM_UNIXTIME(launched_at)) AS launched_at_converted,
+  FROM_UNIXTIME(deadline) - FROM_UNIXTIME(created_at) AS average_days,
+  goal * static_usd_rate AS goal_usd
+FROM projects
+ORDER BY projectid ASC;
+
+![powerbi dashboard](https://github.com/Tyaswanth9/Crowd-funding-project/blob/myself/dashboardp.png)
+
+**Use epoch date to create calender table**
+- SELECT DISTINCT
+  DATE(FROM_UNIXTIME(created_at)) AS dates,
+  YEAR(FROM_UNIXTIME(created_at)) AS year,
+  MONTH(FROM_UNIXTIME(created_at)) AS month_number,
+  MONTHNAME(FROM_UNIXTIME(created_at)) AS month_name,
+  QUARTER(FROM_UNIXTIME(created_at)) AS quarter_number,
+  CONCAT(YEAR(FROM_UNIXTIME(created_at)), ' - ', MONTHNAME(FROM_UNIXTIME(created_at))) AS year_month,
+  DAYOFWEEK(FROM_UNIXTIME(created_at)) AS weekday_status,
+  DAYNAME(FROM_UNIXTIME(created_at)) AS day_name,
+  CONCAT('fiscal_quarter-', QUARTER(FROM_UNIXTIME(created_at))) AS fiscal_quarter,
+  CONCAT('fiscal_month-', MONTH(FROM_UNIXTIME(created_at))) AS fiscal_month
+FROM projects
+ORDER BY dates ASC;
+
+![powerbi dashboard](https://github.com/Tyaswanth9/Crowd-funding-project/blob/myself/dashboardp.png)
+
+**Total number of projects**
+- SELECT COUNT(projectid) AS total_projects FROM projects;
+
+![powerbi dashboard](https://github.com/Tyaswanth9/Crowd-funding-project/blob/myself/dashboardp.png)
+
+**By location**
+- SELECT COUNT(location_id) AS total_by_location FROM projects;
+
+![powerbi dashboard](https://github.com/Tyaswanth9/Crowd-funding-project/blob/myself/dashboardp.png)
+
+**By category**
+- SELECT COUNT(DISTINCT category_id) AS total_by_category FROM projects;
+
+![powerbi dashboard](https://github.com/Tyaswanth9/Crowd-funding-project/blob/myself/dashboardp.png)
+
+**Projects per year**
+- SELECT YEAR(FROM_UNIXTIME(created_at)) AS year, COUNT(*) AS total FROM projects GROUP BY year;
+
+![powerbi dashboard](https://github.com/Tyaswanth9/Crowd-funding-project/blob/myself/dashboardp.png)
+
+**Projects per month**
+- SELECT MONTH(FROM_UNIXTIME(created_at)) AS month, COUNT(*) AS total FROM projects GROUP BY month;
+
+![powerbi dashboard](https://github.com/Tyaswanth9/Crowd-funding-project/blob/myself/dashboardp.png)
+
+
 ---
 
 ##  Conclusion
